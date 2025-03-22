@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -6,6 +10,7 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
 ul{
     list-style-type: none;
@@ -13,6 +18,10 @@ ul{
 }
 
 
+nav{
+    background-color: orange;
+    padding: 20px;
+}
 
 /* {[[[[[[[[[[[[[[[[[[[[common csss}}}}}]]]]]]]]]]]]]]]]]]]]]]] */
 
@@ -23,7 +32,8 @@ ul{
 nav .box{
     display: flex;
     align-items: center;
-    background-color: orange;
+    /* background-color: orange; */
+    
 }
 
 
@@ -46,15 +56,42 @@ nav .box .menu{
 
 nav .box .menu ul{
     justify-content: space-around;
+
 }
 
+nav .box .menu ul li a{
+    position: relative;
+}
+nav .box .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-color: white;
+    transition: 1s;
+}
+
+
+nav .box .menu ul li a:hover::after{
+    width: 100%;
+}
 
 
 
 
 nav .box .button{
-    
+    text-align: right;
     width: 20%;
+    
 }
 
+
+nav .box .button a{
+    margin-right: 20px;
+    padding: 3px 5px; 
+    border: 2px solid white;
+    border-radius: 4px;    
+}
 
