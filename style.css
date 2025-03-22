@@ -1,0 +1,60 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+
+/* {[[[[[[[[[[[[[[[[[[[[common csss}}}}}]]]]]]]]]]]]]]]]]]]]]]] */
+
+
+
+/* {[[[[[[[[[[[[[[[[[[[[navber st}}}}}]]]]]]]]]]]]]]]]]]]]]]] */
+
+nav .box{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+
+nav .box .logo{
+    width: 20%;
+    
+    
+}
+
+nav .box .logo .logo1{
+    width: 100px;
+}
+
+
+nav .box .menu{
+    width: 60%;
+    
+}
+
+
+nav .box .menu ul{
+    justify-content: space-around;
+}
+
+
+
+
+
+nav .box .button{
+    
+    width: 20%;
+}
+
+
